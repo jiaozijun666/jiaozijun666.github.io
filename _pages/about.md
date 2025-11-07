@@ -6,6 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+I focus on two core areas: building an LLM multi-agent pipeline for ESG information extraction and financial analysis, and developing geospatial and time-series models for urban heat-island research. My practice emphasizes standardized interfaces, granular logging, rigorous unit and currency normalization, and reproducible evaluation to guarantee auditability and cross-study comparability.
+
 Education
 ====
 * M.Sc. in Data Science for Sustainability, National University of Singapore, Singapore, 2024 - 2025
