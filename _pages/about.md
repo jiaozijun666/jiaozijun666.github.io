@@ -17,9 +17,9 @@ Education
 
 Projects
 ====
-* [Localized LLM-Based Business Support System for Heavy-Haul Railways]
+* Localized LLM-Based Business Support System for Heavy-Haul Railways
   
-* [Human–AI Interaction for LLM-Enhanced Railway Operations]
+* Human–AI Interaction for LLM-Enhanced Railway Operations
 
 * [AI Agents for Financial Trading](https://github.com/nusduck/QF5214_2025_G7_StockAgent)
   * An LLM-Driven Multi-Agent system for stock prediction and investment recommendation.
