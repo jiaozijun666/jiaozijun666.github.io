@@ -17,6 +17,10 @@ Education
 
 Projects
 ====
+* [Localized LLM-Based Business Support System for Heavy-Haul Railways]
+  
+* [Human–AI Interaction for LLM-Enhanced Railway Operations]
+
 * [AI Agents for Financial Trading](https://github.com/nusduck/QF5214_2025_G7_StockAgent)
   * An LLM-Driven Multi-Agent system for stock prediction and investment recommendation.
   * Multi agent design: fundamental agent, technical agent, sentiment agent, synthesis agent, planner for task routing, adjudicator for consistency and confidence checks
