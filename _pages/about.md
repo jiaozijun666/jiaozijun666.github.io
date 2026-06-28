@@ -18,9 +18,19 @@ Education
 Projects
 ====
 * Localized LLM-Based Business Support System for Heavy-Haul Railways
-  
+  * Developed a localized LLM-based business support system for heavy-haul railway scenarios, covering enterprise knowledge reasoning, intelligent document generation, and workflow automation.
+  * Built domain-specific railway corpora by collecting, cleaning, structuring, and standardizing internal enterprise documents for LLM adaptation and knowledge retrieval.
+  * Applied knowledge injection, retrieval-augmented generation, prompt engineering, and parameter-efficient fine-tuning to improve domain-specific reasoning and response quality.
+  * Developed intelligent office modules for automated PPT generation, meeting-minutes generation, document summarization, and structured business text drafting.
+  * Contributed to localized deployment and data security design through data classification, access control, encrypted storage, backup mechanisms, and lifecycle data governance.
+    
 * Human–AI Interaction for LLM-Enhanced Railway Operations
-
+  * Designed an LLM-enabled human–AI interaction framework for intelligent railway operations, supporting natural-language data retrieval, intelligent analysis, automated reporting, regulatory matching, and bridge capacity assessment.
+  * Built a domain-oriented pipeline integrating railway maintenance records, heterogeneous operational data, regulatory documents, and task-specific reasoning modules.
+  * Developed natural-language query and semantic retrieval workflows to extract, filter, rank, and summarize complex railway operation data.
+  * Supported intelligent data analysis through chained user queries, automated table/chart generation, trend summaries, and decision-support outputs.
+  * Contributed to regulatory knowledge matching and AI-assisted bridge capacity assessment modules using NLP, semantic retrieval, and operational condition data.
+    
 * [AI Agents for Financial Trading](https://github.com/nusduck/QF5214_2025_G7_StockAgent)
   * An LLM-Driven Multi-Agent system for stock prediction and investment recommendation.
   * Multi agent design: fundamental agent, technical agent, sentiment agent, synthesis agent, planner for task routing, adjudicator for consistency and confidence checks
