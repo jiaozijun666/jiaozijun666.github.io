@@ -1,13 +1,20 @@
 ---
 permalink: /
-title: "MYSELF"
+title: "Research Profile"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I focus on two core areas: building an LLM multi-agent pipeline for ESG information extraction and financial analysis, and developing geospatial and time-series models for urban heat-island research. My practice emphasizes standardized interfaces, granular logging, rigorous unit and currency normalization, and reproducible evaluation to guarantee auditability and cross-study comparability.
+### Research Interests
+
+My research interests lie at the intersection of **data-driven operations, optimization, and decision analytics**. I am interested in developing predictive and prescriptive methods that support decision-making in complex operational systems.
+
+My current interests include **demand and condition forecasting, robust and resource-aware predictive modelling, decision-making under uncertainty, and the integration of machine learning with optimization**. I am particularly interested in how predictive models can be translated into effective operational decisions in areas such as **maintenance, capacity planning, service systems, and resource allocation**.
+
+My broader goal is to develop **reliable, interpretable, and computationally efficient decision-support methods** that combine data, prediction, and optimization for real-world operational problems.
+
 
 Education
 ====
