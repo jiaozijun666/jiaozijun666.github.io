@@ -12,117 +12,34 @@ author_profile: true
 <img
   src="/images/railway_llm.png"
   alt="LLM-Based Business Support System for Heavy-Haul Railways"
-  style="width:100%; max-width:1000px; border-radius:14px; margin:14px 0 20px 0;"
+  style="width:100%; max-width:1000px; border-radius:14px; margin:14px 0 18px 0;"
 >
 
 <p>
 Developed a <strong>secure, on-premise LLM-based business support system</strong>
-for heavy-haul railway operations, designed to support enterprise knowledge services,
-intelligent document processing, multimodal interaction, and domain-specific decision support.
-The project integrates railway-domain language models, retrieval-augmented generation,
-knowledge graphs, multimodal AI, and workflow orchestration within a unified local deployment
-architecture.
+for heavy-haul railway operations, integrating domain-adapted language models,
+RAG, knowledge graphs, multimodal processing, and intelligent workflow orchestration.
+The platform supports knowledge Q&A, document generation, meeting-minute generation,
+PPT generation, and operational decision support.
 </p >
 
 <p>
-The system follows a layered design spanning <strong>enterprise data and knowledge,
-domain-adapted LLM services, hybrid retrieval and reasoning, multimodal perception,
-and application-level workflow orchestration</strong>. A private deployment architecture
-was adopted to keep sensitive railway documents, meeting recordings, and operational data
-within the enterprise network while supporting scalable model inference and knowledge services.
-</p >
-
-<h3>Core Technical Components</h3>
-
-<p>
-<strong>Domain-Adapted LLM:</strong>
-Built a railway-specific language model pipeline using domain adaptation and
-parameter-efficient fine-tuning, enabling the model to better understand railway terminology,
-business processes, safety regulations, and enterprise writing styles.
+A key component is an <strong>intelligent meeting-minutes pipeline</strong> that combines
+railway-adapted Whisper ASR, speaker diarization, hierarchical LLM summarization,
+structured action-item extraction, and safety-rule checking to transform long meeting
+recordings into actionable minutes.
 </p >
 
 <p>
-<strong>Hybrid RAG and Knowledge Reasoning:</strong>
-Combined vector retrieval and keyword retrieval with reranking to improve knowledge recall
-for both semantic questions and exact railway terminology. The system further integrates
-a knowledge graph with retrieval-augmented generation to support structured reasoning,
-evidence tracing, and more reliable answers for complex operational queries.
+<strong>Results:</strong>
+WER 8.1% · DER 9.9% · Action-item F1 85.9% · Expert rating 4.3/5 ·
+1-hour meeting processed in approximately 2.2 minutes
 </p >
 
 <p>
-<strong>Multimodal Processing:</strong>
-Integrated speech and document understanding capabilities through
-Whisper-based automatic speech recognition and PaddleOCR-based document parsing.
-Meeting recordings, scanned documents, PDFs, and operational materials can be converted
-into structured text and further processed by the LLM and knowledge-retrieval pipeline.
+<strong>Tech:</strong>
+DeepSeek · RAG · Graph-RAG · Whisper · PaddleOCR · Milvus · Neo4j ·
+Elasticsearch · LangChain · Kubernetes
 </p >
 
-<p>
-<strong>Security and Traceability:</strong>
-Designed fine-grained access control, local data processing, knowledge-level permission
-filtering, and audit logging to support secure use of enterprise information.
-Generated answers are linked to source knowledge whenever possible, improving
-traceability and reliability in safety-critical scenarios.
-</p >
-
-<h3>Featured Component: Intelligent Meeting Minutes Generation</h3>
-
-<p>
-Designed an end-to-end pipeline that transforms long railway meeting recordings into
-<strong>structured, actionable meeting minutes</strong>. The workflow combines audio
-preprocessing, domain-adapted speech recognition, speaker diarization, hierarchical
-LLM summarization, structured information extraction, and railway-specific safety checks.
-</p >
-
-<p>
-Raw meeting audio is first standardized and denoised, followed by voice activity detection
-and railway-adapted Whisper speech recognition. The system then applies speaker diarization
-to identify different participants and align speaker labels with timestamped transcripts.
-To process long meetings efficiently, the transcript is divided into semantic topics,
-summarized at the segment level, and subsequently fused into a higher-level meeting summary.
-</p >
-
-<p>
-The final LLM stage extracts structured information including
-<strong>meeting topics, key discussions, decisions, unresolved issues, action items,
-responsible persons, and deadlines</strong>. A railway-specific safety module additionally
-extracts safety-related discussions and checks generated content against relevant safety
-requirements before producing the final minutes.
-</p >
-
-<h3>Evaluation</h3>
-
-<p>
-The meeting-minutes pipeline was evaluated on real railway meetings covering operational
-handover, safety analysis, and technical discussions.
-</p >
-
-<p>
-<strong>WER:</strong> 8.1% &nbsp; · &nbsp;
-<strong>DER:</strong> 9.9% &nbsp; · &nbsp;
-<strong>Action-item Precision:</strong> 89% &nbsp; · &nbsp;
-<strong>Action-item Recall:</strong> 83% &nbsp; · &nbsp;
-<strong>Action-item F1:</strong> 85.9%
-</p >
-
-<p>
-<strong>Expert Evaluation:</strong> 4.3 / 5 &nbsp; · &nbsp;
-<strong>Information Completeness:</strong> 4.5 / 5 &nbsp; · &nbsp;
-<strong>Processing Efficiency:</strong> approximately 2.2 minutes for a 1-hour meeting
-</p >
-
-<h3>Applications</h3>
-
-<p>
-The platform supports a range of enterprise scenarios, including
-<strong>knowledge Q&A, intelligent writing, PPT generation, meeting-minute generation,
-document processing, Excel data analysis, procurement support, and knowledge management</strong>.
-These applications share a common model and knowledge-service layer, allowing the system
-to reuse domain knowledge across different business workflows.
-</p >
-
-<p>
-<strong>Tech Stack:</strong>
-DeepSeek · Whisper · PaddleOCR · Milvus · Neo4j · Elasticsearch ·
-LangChain · Kubernetes · RAG · Graph-RAG · LoRA / QLoRA
-</p >
+<hr>
