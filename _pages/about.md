@@ -32,11 +32,11 @@ Projects
   * Contributed to regulatory knowledge matching and AI-assisted bridge capacity assessment modules using NLP, semantic retrieval, and operational condition data.
     
 * [AI Agents for Financial Trading](https://github.com/nusduck/QF5214_2025_G7_StockAgent)
-  <img
-  src="/images/stockagent.png"
-  alt="Multi-Agent Stock Analysis Platform"
-  style="width:100%; max-width:950px; border-radius:14px; margin:16px 0 22px 0;"
->
+  
+<img src="/images/stockagent.png"
+     alt="Multi-Agent Stock Analysis Platform"
+     width="950">
+  
   * An LLM-Driven Multi-Agent system for stock prediction and investment recommendation.
   * Multi agent design: fundamental agent, technical agent, sentiment agent, synthesis agent, planner for task routing, adjudicator for consistency and confidence checks
   * Data integration: market and fundamentals, news and reports, social sentiment, on the fly technical indicators including MA, RSI, MACD, Bollinger, ATR, ROC
