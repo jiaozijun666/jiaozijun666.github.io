@@ -37,3 +37,46 @@ DeepSeek · RAG · Graph-RAG · Whisper · PaddleOCR · Neo4j ·  LangChain
 </p >
 
 <hr>
+
+
+<h2>5. Multi-Agent Equity Analysis with Large Language Models</h2>
+
+<img
+  src="/images/stockagent.png"
+  alt="Multi-Agent Equity Analysis with Large Language Models"
+  style="width:100%; max-width:1000px; border-radius:14px; margin:14px 0 18px 0;"
+>
+
+<p>
+Developed a <strong>multi-agent equity analysis system</strong> in which four
+specialized analyst agents—fundamental, technical, sentiment, and adversarial—
+coordinate through a shared state rather than direct agent-to-agent calls.
+This design keeps individual agents modular, independently testable, and replaceable.
+</p>
+
+<p>
+The system uses a <strong>two-tier prompt architecture</strong> that separates
+global rules for output format, tool use, and fallback behaviour from role-specific
+instructions governing each analyst's methodology and risk boundaries. An
+<strong>adversarial review stage</strong> then challenges the analyst reports for
+over-optimistic assumptions, under-weighted macro and governance risks,
+cross-report contradictions, fragile assumptions, and horizon-dependent forecasts.
+</p>
+
+<p>
+<strong>Key Ideas:</strong>
+Shared-state coordination · Modular agent design · Structured prompting ·
+Adversarial review · Cross-report consistency checking · Explainable synthesis
+</p>
+
+<p>
+<strong>Tech:</strong>
+Python · FastAPI · MySQL · AkShare · Next.js · React · Streamlit
+</p>
+
+<p>
+<em>The project delivered a working system; no backtesting or forecast-validity
+evaluation was conducted.</em>
+</p>
+
+<hr>
