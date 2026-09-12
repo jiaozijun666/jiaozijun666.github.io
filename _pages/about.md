@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Research Profile"
+title: "Research Interests"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-### Research Interests
+
 
 My research interests lie at the intersection of **data-driven operations, optimization, and decision analytics**. I am interested in developing predictive and prescriptive methods that support decision-making in complex operational systems.
 
