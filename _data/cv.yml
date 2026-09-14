@@ -1,0 +1,114 @@
+cv:
+  name: Zijun Jiao
+  label: Research Assistant, The Future Laboratory, Tsinghua University
+  email: zijunjiaoapply@163.com
+  location: Beijing, China
+  image: ""
+  summary: >
+    Data-driven optimization and decision-making for sustainable operations, with interests in
+    demand and condition forecasting, robust and resource-aware predictive modelling, and the
+    integration of predictive models with optimization for maintenance, capacity and service
+    decisions. Applying for PhD programmes starting Fall 2027.
+
+  social_networks:
+    - network: GitHub
+      username: jiaozijun666
+
+  # Section names below are the ones the CV renderer knows how to lay out
+  # (Experience, Education, Projects, Skills, Languages). Renaming one to
+  # something else silently renders an empty card.
+  sections:
+    Experience:
+      - company: Tsinghua University — advised by Prof. Haipeng Mi
+        position: Backend and tool-agent orchestration for an air-gapped railway intelligence system
+        location: Beijing, China
+        start_date: 2025-06
+        highlights:
+          - "Backend and integration: responsible for backend construction, covering data processing and the integration of external tool agents, within a network-isolated on-premise language-model system supporting office and maintenance workflows at a heavy-haul railway operator."
+          - "Meeting-documentation workflow: designed and built the automated meeting-minutes workflow as a two-tier agent — a controller that selects among registered retrieval, transcription and reasoning tools, and a sub-agent that converts noisy transcripts into structured minutes through noise reduction, semantic reconstruction and topic structuring."
+          - "Reliability and data governance: introduced a permissioned four-zone workspace (read-only knowledge base, write-isolated user input, scratch space, results directory) together with an explicit delegation contract between the two tiers, so that agent actions cannot modify authoritative enterprise records."
+
+      - company: National University of Singapore — course research project
+        position: Resource-aware benchmarking of classical and deep time-series forecasters
+        start_date: 2025-01
+        end_date: 2025-05
+        highlights:
+          - "Study design: benchmarked six forecasters (Prophet, LightGBM, DLinear, LSTM, Transformer, DARNN) on five univariate series drawn from energy consumption, air quality, manufacturing productivity, urban traffic and biomedical gait, each with a dataset-specific preprocessing pipeline covering imputation, winsorisation, calendar and event features, and train-set-only scaling to prevent leakage."
+          - "Evaluation beyond error: scored every model–dataset pair on forecast error (MAE, RMSE, MAPE, sMAPE), decision-relevant accuracy (directional and threshold accuracy), deployment cost (training time, peak memory, early stopping), and noise robustness (ΔMAE under additive Gaussian perturbation, σ = 0.05)."
+          - "Finding: peak memory varied by roughly three orders of magnitude across models, and the most accurate model on a given series was frequently neither the cheapest nor the most noise-stable — LightGBM degraded by up to 63% MAE under perturbation on the smallest series while the recurrent models stayed within 1.2%. Forecaster selection should be posed against deployment constraints rather than as error minimisation alone."
+
+      - company: National University of Singapore
+        position: LLM-assisted ESG metric extraction and standardisation for healthcare reporting
+        date: 2025
+        highlights:
+          - "Extraction and standardisation architecture: paired a language-model extractor parsing heterogeneous sustainability-report prose into metric, value, unit and confidence tuples with a BERT semantic matcher mapping free-form metric names onto a canonical taxonomy, connected by typed data contracts so extraction, matching and scoring remain independently replaceable."
+          - "Scoring framework and validation plan: implemented an 18-topic, 39-indicator rubric aligned to SGX reporting guidance, with topic weights derived from mention frequencies across 83 Singapore-listed healthcare sustainability reports, and designed an evaluation protocol for human annotation and external-rating comparison to be carried out in a subsequent validation phase."
+
+      - company: University of Southampton — undergraduate dissertation, sole author, advised by Dr. Itamar Yaakov
+        position: Machine-learning representations for quantum many-body ground states
+        start_date: 2023-10
+        end_date: 2024-05
+        highlights:
+          - "Reviewed and compared neural-network quantum states, matrix-product and projected entangled-pair tensor networks, and restricted Boltzmann machines as compressed variational representations of exponentially large wavefunctions, covering variational optimisation, imaginary-time evolution, and variational Monte Carlo with stochastic reconfiguration."
+          - "Analysed the expressivity relationship between restricted Boltzmann machine and matrix-product-state representations and the conditions for conversion between them, using entanglement entropy as the comparison criterion."
+
+    Education:
+      - institution: Tsinghua University
+        location: Beijing, China
+        url: https://thfl.tsinghua.edu.cn/index.htm
+        area: The Future Laboratory
+        studyType: Research Assistant (non-degree appointment)
+        start_date: 2025-06
+
+      - institution: National University of Singapore
+        location: Singapore
+        url: https://www.nus.edu.sg/
+        area: Data Science for Sustainability
+        studyType: MSc
+        start_date: 2024-08
+        end_date: 2025-05
+        courses:
+          - "Optimisation Methods for Deep Learning; Deep Learning for Time-Series Analysis"
+
+      - institution: University of Southampton
+        location: Southampton
+        url: https://www.southampton.ac.uk/
+        area: Mathematical Sciences
+        studyType: BSc (Hons)
+        start_date: 2021-09
+        end_date: 2024-06
+        courses:
+          - "Probability; Statistical Modelling; Numerical Methods; Partial Differential Equations; Real Analysis; Linear Algebra; Group Theory"
+
+    Projects:
+      - name: Multi-agent equity analysis with large language models
+        date: 2025
+        summary: Coursework project, National University of Singapore.
+        highlights:
+          - "Co-designed the shared state object through which four analyst agents (fundamentals, technical, sentiment, adversarial) exchange information: agents never call one another; tools write into six typed domains and downstream agents read the fields they need, keeping each agent independently testable and replaceable."
+          - "Separated a system-level prompt fixing output format, tool-use protocol and fallback behaviour from role-specific prompts constraining each analyst's methodology and risk boundaries."
+          - "Specified a five-part adversarial challenge applied to the analyst reports, testing for over-optimistic assumptions, under-weighted macro and governance risk, cross-report contradictions, assumption fragility and horizon-separated forecasts. The project delivered a working system; no backtesting was carried out."
+
+      - name: Scaled conjugate gradient methods for deep learning optimisation
+        date: 2025
+        summary: Coursework project, National University of Singapore.
+        highlights:
+          - "The team studied a hybrid optimiser introducing a dynamic scaling factor into the conjugate-gradient update rule, with convergence rates argued at O(1/N) under a constant step size and O(1/√N) under a decaying step size, benchmarked against SGD, Adam and AdaBelief on CIFAR-10, CIFAR-100 and IMDb."
+          - "Individual contribution: wrote the discussion and possible-extensions analysis, examining which assumptions in the convergence argument constrain applicability to non-convex settings. The derivation and the empirical work were carried out by other team members."
+
+    Skills:
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords: "Python, SQL, R, LaTeX"
+      - name: Modelling
+        icon: fa-solid fa-chart-line
+        keywords: "PyTorch, Darts, LightGBM, Prophet, scikit-learn, Hugging Face Transformers, NumPy, Pandas"
+      - name: Systems
+        icon: fa-solid fa-layer-group
+        keywords: "LangChain, agent and tool orchestration, retrieval-augmented generation, MySQL, Flask/Dash, Git"
+
+    Languages:
+      - name: Chinese
+        summary: "Native speaker"
+      - name: English
+        summary: "Fluent"

@@ -1,0 +1,12 @@
+Copy this into a new file named _news/YYYY-MM-DD-short-slug.md whenever something
+datable happens: a preprint posted, a talk given, code released, a new position.
+Keep one sentence. Items appear newest first on the front page.
+
+---
+layout: post
+date: 2026-01-15
+inline: true
+related_posts: false
+---
+
+One sentence about what happened, with a [link](https://example.com) if there is one.

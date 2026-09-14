@@ -1,0 +1,10 @@
+# Social links shown under the profile photo on the front page.
+# Leave a field commented out rather than pointing it at an empty profile —
+# an icon that leads to a page with nothing on it reads worse than no icon.
+
+email: zijunjiaoapply@163.com
+github_username: jiaozijun666
+cv_pdf: /assets/pdf/CV_Zijun_Jiao.pdf
+# linkedin_username:      # add once the profile is filled in
+# scholar_userid:         # add only once there is something to show
+# rss_icon: true          # uncomment to show an RSS icon

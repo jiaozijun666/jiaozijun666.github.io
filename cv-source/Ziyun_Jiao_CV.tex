@@ -1,0 +1,264 @@
+%-------------------------
+% Academic CV -- Ziyun Jiao
+% Target: PhD in IEOR / data-driven operations / decision analytics
+% (HKUST IEDA, PolyU ISE, CityU SE, CUHK SEEM; Southampton, Edinburgh,
+%  Lancaster OR & Management Science)
+% Template lineage: https://github.com/sb2nov/resume (MIT License)
+%
+
+%------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,top=15mm,bottom=15mm,left=16mm,right=16mm]{geometry}
+\usepackage{latexsym}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{hyperref}
+\definecolor{linknavy}{RGB}{0,51,128}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=linknavy,
+    pdftitle={Ziyun Jiao -- Curriculum Vitae},
+    pdfauthor={Ziyun Jiao},
+}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{\textbf{#1}{#2 \vspace{-2pt}}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+% #1 title, #2 affiliation / context (kept short so it never collides with
+% the date), #3 date
+\newcommand{\resumeSubheadingalter}[3]{
+  \vspace{2pt}\item
+   \textbf{#1} \\
+    \begin{tabular*}{0.97\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+      \textit{\small#2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING-----------------
+% Insert contact details on the second line once supplied (see item (1) above).
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Huge Zijun Jiao}} & \\
+  Personal Page: \href{https://jiaozijun666.github.io/}{https://jiaozijun666.github.io/}
+  & Github: \href{https://github.com/jiaozijun666}{https://github.com/jiaozijun666}\\
+  Email: \href{mailto:zijunjiaoapply@163.com / e1352146@u.nus.edu}{zijunjiaoapply@163.com / e1352146@u.nus.edu}
+  & Contact Number: +86 15207103093\\
+\end{tabular*}
+\vspace{4pt}
+
+%-----------RESEARCH INTERESTS-----------------
+\section{Research Interests}
+\vspace{2pt}
+{\small
+Data-driven optimization and decision-making for sustainable operations, with
+interests in demand and condition forecasting, robust and resource-aware predictive
+modelling, and the integration of predictive models with optimization for
+maintenance, capacity, and service decisions.
+}
+\vspace{4pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+       {Tsinghua University}{Beijing, China}
+      {Research Assistant (non-degree appointment), \href{https://thfl.tsinghua.edu.cn/index.htm}{The Future Laboratory}}{Jun. 2025 -- Present}
+    \resumeSubheading
+       {National University of Singapore}{Singapore}
+      {M.Sc. in Data Science for Sustainability}{Aug. 2024 -- May 2025}
+    \resumeSubheading
+       {University of Southampton}{Southampton, United Kingdom}
+      {B.Sc. (Hons) in Mathematical Sciences}{Sep. 2021 -- Jun. 2024}
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------------
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheadingalter
+{Backend and Tool-Agent Orchestration for an Air-Gapped Railway Intelligence System}
+{Tsinghua University, Research Assistant, advised by \href{https://thfl.tsinghua.edu.cn/yjdw/jzg/zxjg/qt/yjy/mhp.htm}{Prof. Haipeng Mi}}{Jun. 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Backend and integration: }
+{Responsible for backend construction, covering data processing and the integration
+of external tool agents, within a network-isolated on-premise language-model system
+supporting office and maintenance workflows at a heavy-haul railway operator;}
+\resumeItem{Meeting-documentation workflow: }
+{Designed and built the automated meeting-minutes workflow as a two-tier agent:
+a controller that selects among registered retrieval, transcription and reasoning
+tools, and a sub-agent that converts noisy transcripts into structured minutes
+through noise reduction, semantic reconstruction and topic structuring;}
+\resumeItem{Reliability and data governance: }
+{Introduced a permissioned four-zone workspace (read-only knowledge base,
+write-isolated user input, scratch space, results directory) together with an
+explicit delegation contract between the two tiers, so that agent actions cannot
+modify authoritative enterprise records, which is the governance requirement
+motivating on-premise deployment.}
+\resumeItemListEnd
+
+\resumeSubheadingalter
+{Resource-Aware Benchmarking of Classical and Deep Time-Series Forecasters}
+{National University of Singapore, course research project}{Jan. -- May 2025}
+\resumeItemListStart
+\resumeItem{Study design: }
+{Benchmarked six forecasters (Prophet, LightGBM, DLinear, LSTM, Transformer, DARNN)
+on five univariate series drawn from energy consumption, air quality, manufacturing
+productivity, urban traffic and biomedical gait, each with a dataset-specific
+preprocessing pipeline covering imputation, winsorisation, calendar and event
+features, and train-set-only scaling to prevent leakage;}
+\resumeItem{Evaluation beyond error: }
+{Scored every model and dataset pair on four axes: forecast error (MAE, RMSE, MAPE,
+sMAPE), decision-relevant accuracy (directional and threshold accuracy), deployment
+cost (training time, peak memory, early stopping), and noise robustness ($\Delta$MAE
+under additive Gaussian perturbation, $\sigma = 0.05$);}
+\resumeItem{Finding: }
+{Peak memory varied by roughly three orders of magnitude across models, from tens of
+gigabytes for the attention-based recurrent model to tens of megabytes for the linear
+and gradient-boosting baselines, and the most accurate model on a given series was
+frequently neither the cheapest nor the most noise-stable. LightGBM degraded by up to
+63\% MAE under perturbation on the smallest series while the recurrent models stayed
+within 1.2\%, and several deep models fell below 0.50 directional accuracy on that
+series. The study concludes that forecaster selection should be posed against
+deployment constraints rather than as error minimisation alone.}
+\resumeItemListEnd
+
+\resumeSubheadingalter
+{LLM-Assisted ESG Metric Extraction and Standardisation for Healthcare Reporting}
+{National University of Singapore}{2025}
+\resumeItemListStart
+\resumeItem{Extraction and standardisation architecture: }
+{Paired a language-model extractor, which parses heterogeneous sustainability-report
+prose into metric, value, unit and confidence tuples, with a BERT semantic matcher
+mapping free-form metric names onto a canonical taxonomy, connected by typed data
+contracts so that extraction, matching and scoring remain independently replaceable;}
+\resumeItem{Scoring framework and validation plan: }
+{Implemented an 18-topic, 39-indicator rubric aligned to SGX reporting guidance,
+with topic weights derived from mention frequencies across 83 Singapore-listed
+healthcare sustainability reports, and designed an evaluation protocol for human
+annotation and external-rating comparison to be carried out in a subsequent
+validation phase.}
+\resumeItemListEnd
+
+\resumeSubheadingalter
+{Machine-Learning Representations for Quantum Many-Body Ground States}
+{Undergraduate dissertation, sole author; advised by \href{https://www.southampton.ac.uk/people/629q5s/doctor-itamar-yaakov}{Dr. Itamar Yaakov}}{Oct. 2023 -- May 2024}
+\resumeItemListStart
+\resumeItem{Independent theoretical dissertation: }
+{Reviewed and compared neural-network quantum states, matrix-product and projected
+entangled-pair tensor networks, and restricted Boltzmann machines as compressed
+variational representations of exponentially large wavefunctions, covering
+variational optimisation, imaginary-time evolution, and variational Monte Carlo with
+stochastic reconfiguration;}
+\resumeItem{Comparative analysis: }
+{Analysed the expressivity relationship between restricted Boltzmann machine and
+matrix-product-state representations and the conditions for conversion between them,
+using entanglement entropy as the comparison criterion.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------COURSEWORK PROJECTS-----------------
+\section{Coursework Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheadingalter
+{Multi-Agent Equity Analysis with Large Language Models}
+{National University of Singapore}{2025}
+\resumeItemListStart
+\resumeItem{Shared-state coordination: }
+{Co-designed the shared state object through which four analyst agents
+(fundamentals, technical, sentiment and adversarial) exchange information. Agents
+never call one another directly: data-collection tools write into six typed domains
+covering identifiers, market data, financial statements, external research, generated
+reports and workflow control, and downstream agents read the fields they need, which
+keeps each agent independently testable and replaceable;}
+\resumeItem{Two-tier prompt architecture: }
+{Separated a system-level prompt fixing output format, tool-use protocol and
+fallback behaviour from role-specific prompts constraining each analyst's
+methodology and risk boundaries, so that agent outputs remain machine-parsable and
+mergeable across roles;}
+\resumeItem{Adversarial review stage: }
+{Specified a five-part challenge applied to the three analyst reports, testing for
+over-optimistic assumptions, under-weighted macro and governance risk,
+cross-report contradictions, assumption fragility, and horizon-separated forecasts,
+as a hedge against convergent reasoning among the analyst agents. The project
+delivered a working system; no backtesting or forecast-validity evaluation was
+carried out.}
+\resumeItemListEnd
+
+\resumeSubheadingalter
+{Scaled Conjugate Gradient Methods for Deep Learning Optimisation}
+{National University of Singapore}{2025}
+\resumeItemListStart
+\resumeItem{Study context: }
+{The team studied a hybrid optimiser introducing a dynamic scaling factor into the
+conjugate-gradient update rule, with convergence rates argued at $O(1/N)$ under a
+constant step size and $O(1/\sqrt{N})$ under a decaying step size, benchmarked
+against SGD, Adam and AdaBelief on CIFAR-10, CIFAR-100 and IMDb classification;}
+\resumeItem{Individual contribution: }
+{Wrote the discussion and possible-extensions analysis, examining which assumptions
+in the convergence argument constrain the method's applicability to non-convex
+settings and which extensions are worth pursuing. The derivation and the empirical
+work were carried out by other team members.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--------COURSEWORK------------
+\section{Relevant Coursework}
+ \resumeItemListStart
+   \item \textbf{Optimisation and numerical methods}: Optimisation Methods for Deep
+   Learning; Numerical Methods
+   \item \textbf{Probability, statistics and modelling}: Probability; Statistical
+   Modelling; Deep Learning for Time-Series Analysis
+   \item \textbf{Mathematics}: Partial Differential Equations; Real Analysis; Linear
+   Algebra; Group Theory
+ \resumeItemListEnd
+
+%--------SKILLS------------
+\section{Technical Skills}
+ \resumeItemListStart
+   \item \textbf{Languages}: Python, SQL, R, \LaTeX
+   \item \textbf{Modelling}: PyTorch, Darts, LightGBM, Prophet, scikit-learn,
+   Hugging Face Transformers, NumPy, Pandas
+   \item \textbf{Systems}: LangChain, agent and tool orchestration,
+   retrieval-augmented generation, MySQL, Flask/Dash, Git
+ \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
