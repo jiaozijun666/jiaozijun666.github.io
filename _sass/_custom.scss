@@ -207,16 +207,36 @@
     color: var(--global-text-color-light);
     background-color: var(--global-bg-color);
   }
+.list-group-item:nth-child(1) .date-column::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("/assets/img/THU.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .list-group-item:nth-child(1) .date-column::after {
-    content: "THU.jpeg";
-  }
+.list-group-item:nth-child(2) .date-column::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("/assets/img/nus.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .list-group-item:nth-child(2) .date-column::after {
-    content: "nus.jpeg";
-  }
-
-  .list-group-item:nth-child(3) .date-column::after {
-    content: "uos.jpeg";
-  }
+.list-group-item:nth-child(3) .date-column::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("/assets/img/UOS.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 }
