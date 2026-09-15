@@ -1,1 +1,130 @@
-<!DOCTYPE html> <html lang="" class="no-js"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <title>Scaled conjugate gradient methods for deep learning optimisation blank</title> <meta name="description" content="A dynamic scaling factor inside the conjugate-gradient update, benchmarked against Adam and AdaBelief."> <meta property="article:published_time" content="2026-09-15T05:53:47+00:00"> <link rel="canonical" href="https://jiaozijun666.github.io/projects/6_scg/"> <meta property="og:locale" content="en"> <meta property="og:site_name" content="blank"> <meta property="og:title" content="Scaled conjugate gradient methods for deep learning optimisation"> <meta property="og:type" content="article"> <meta property="og:description" name="description" content="A dynamic scaling factor inside the conjugate-gradient update, benchmarked against Adam and AdaBelief."> <meta property="og:url" content="https://jiaozijun666.github.io/projects/6_scg/"> <link href="https://jiaozijun666.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="blank Feed"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script> <link rel="stylesheet" href="https://jiaozijun666.github.io/assets/css/main.css"> <link rel="stylesheet" href="https://jiaozijun666.github.io/assets/css/academicons.css"> <link rel="apple-touch-icon" sizes="180x180" href="https://jiaozijun666.github.io/images/apple-touch-icon-180x180.png"> <link rel="icon" type="image/svg+xml" href="https://jiaozijun666.github.io/images/favicon.svg"> <link rel="icon" type="image/png" href="https://jiaozijun666.github.io/images/favicon-32x32.png" sizes="32x32"> <link rel="icon" type="image/png" href="https://jiaozijun666.github.io/images/favicon-192x192.png" sizes="192x192"> <link rel="manifest" href="https://jiaozijun666.github.io/images/manifest.json"> <link rel="icon" href="/images/favicon.ico"> <meta name="theme-color" content="#ffffff"> </head> <body> <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]--> <div class="masthead"> <div class="masthead__inner-wrap"> <div class="masthead__menu"> <nav id="site-nav" class="greedy-nav"> <button><span class="navicon"></span></button> <ul class="visible-links"> <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="https://jiaozijun666.github.io/">blank</a></li> <li class="masthead__menu-item"><a href="https://jiaozijun666.github.io/">Research</a></li> <li class="masthead__menu-item"><a href="https://jiaozijun666.github.io/education/">Education</a></li> <li class="masthead__menu-item"><a href="https://jiaozijun666.github.io/portfolio/">Projects</a></li> <li class="masthead__menu-item"><a href="https://jiaozijun666.github.io/cv/">CV</a></li> <li id="theme-toggle" class="masthead__menu-item persist tail"> <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a> </li> </ul> <ul class="hidden-links hidden"></ul> </nav> </div> </div> </div> <div class="post"> <header class="post-header"> <h1 class="post-title">Scaled conjugate gradient methods for deep learning optimisation</h1> <p class="post-description">A dynamic scaling factor inside the conjugate-gradient update, benchmarked against Adam and AdaBelief.</p> </header> <article> <p><strong>National University of Singapore · 2025</strong></p> <p><strong>Study context.</strong> The team studied a hybrid optimiser that introduces a dynamic scaling factor into the conjugate-gradient update rule, with convergence rates argued at O(1/N) under a constant step size and O(1/√N) under a decaying one, benchmarked against SGD, Adam and AdaBelief on CIFAR-10, CIFAR-100 and IMDb classification.</p> <p><strong>My contribution.</strong> I wrote the discussion and possible-extensions analysis: which assumptions in the convergence argument constrain the method’s applicability to non-convex settings, and which extensions are worth pursuing. The derivation and the empirical work were carried out by other team members.</p> </article> </div> <div class="page__footer"> <footer> <a href="/sitemap/">Sitemap</a> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script> <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script> <script defer src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/3.0.1/plotly.min.js"></script> <script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs'; mermaid.initialize({startOnLoad:true, theme:'default'}); await mermaid.run({querySelector:'code.language-mermaid'}); </script> <div class="page__footer-follow"> <ul class="social-icons"> <li><a href="https://jiaozijun666.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li> </ul> </div> <div class="page__footer-copyright"> © 2026 blank, Powered by <a href="https://jekyllrb.com" rel="nofollow" target="_blank">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io" rel="external nofollow noopener" target="_blank">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow" target="_blank">Minimal Mistakes</a>.<br> Site last updated 2026-09-15 </div> </footer> </div> <script type="module" src="https://jiaozijun666.github.io/assets/js/main.min.js"></script> </body> </html>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Scaled conjugate gradient methods for deep learning optimisation | Zijun Jiao </title> <meta name="author" content="Zijun Jiao"> <meta name="description" content="A dynamic scaling factor inside the conjugate-gradient update, benchmarked against Adam and AdaBelief."> <meta name="keywords" content="operations research, decision analytics, time series forecasting, large language models, retrieval-augmented generation, sustainable operations, PhD applicant"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E3%80%BD%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://jiaozijun666.github.io/projects/6_scg/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Zijun</span> Jiao </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Scaled conjugate gradient methods for deep learning optimisation</h1> <p class="post-description">A dynamic scaling factor inside the conjugate-gradient update, benchmarked against Adam and AdaBelief.</p> </header> <article> <p><strong>National University of Singapore · 2025</strong></p> <p><strong>Study context.</strong> The team studied a hybrid optimiser that introduces a dynamic scaling factor into the conjugate-gradient update rule, with convergence rates argued at O(1/N) under a constant step size and O(1/√N) under a decaying one, benchmarked against SGD, Adam and AdaBelief on CIFAR-10, CIFAR-100 and IMDb classification.</p> <p><strong>My contribution.</strong> I wrote the discussion and possible-extensions analysis: which assumptions in the convergence argument constrain the method’s applicability to non-convex settings, and which extensions are worth pursuing. The derivation and the empirical work were carried out by other team members.</p> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Zijun Jiao. Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Last updated: September 15, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-research",
+          title: "research",
+          description: "Research and project work, with my own role stated for each.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Last updated September 2026.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "news-graduated-from-the-university-of-southampton-with-a-bsc-in-mathematical-sciences",
+          title: 'Graduated from the University of Southampton with a BSc in Mathematical Sciences.',
+          description: "",
+          section: "News",},{id: "news-started-the-msc-in-data-science-for-sustainability-at-nus",
+          title: 'Started the MSc in Data Science for Sustainability at NUS.',
+          description: "",
+          section: "News",},{id: "news-completed-the-msc-in-data-science-for-sustainability-at-the-national-university-of-singapore",
+          title: 'Completed the MSc in Data Science for Sustainability at the National University of...',
+          description: "",
+          section: "News",},{id: "news-joined-the-future-laboratory-at-tsinghua-university-as-a-research-assistant-advised-by-prof-haipeng-mi",
+          title: 'Joined The Future Laboratory at Tsinghua University as a research assistant, advised by...',
+          description: "",
+          section: "News",},{id: "projects-backend-and-tool-agent-orchestration-for-an-air-gapped-railway-intelligence-system",
+          title: 'Backend and tool-agent orchestration for an air-gapped railway intelligence system',
+          description: "Tool-agent integration, an automated meeting-documentation workflow, and the permission model that makes on-premise deployment defensible.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_railway/";
+            },},{id: "projects-resource-aware-benchmarking-of-classical-and-deep-time-series-forecasters",
+          title: 'Resource-aware benchmarking of classical and deep time-series forecasters',
+          description: "Accuracy, deployment cost and noise robustness across five domains — and why the most accurate model is often none of the ones you would deploy.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_timeseries/";
+            },},{id: "projects-llm-assisted-esg-metric-extraction-and-standardisation-for-healthcare-reporting",
+          title: 'LLM-assisted ESG metric extraction and standardisation for healthcare reporting',
+          description: "A language-model extractor and a BERT matcher joined by typed data contracts, feeding an 18-topic scoring rubric.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_esg/";
+            },},{id: "projects-machine-learning-representations-for-quantum-many-body-ground-states",
+          title: 'Machine-learning representations for quantum many-body ground states',
+          description: "Undergraduate dissertation, sole author — neural-network quantum states, tensor networks, and the expressivity relation between them.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_quantum/";
+            },},{id: "projects-multi-agent-equity-analysis-with-large-language-models",
+          title: 'Multi-agent equity analysis with large language models',
+          description: "Four analyst agents exchanging information only through a typed shared state, with an adversarial stage built to disagree with them.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_stockagent/";
+            },},{id: "projects-scaled-conjugate-gradient-methods-for-deep-learning-optimisation",
+          title: 'Scaled conjugate gradient methods for deep learning optimisation',
+          description: "A dynamic scaling factor inside the conjugate-gradient update, benchmarked against Adam and AdaBelief.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_scg/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%7A%69%6A%75%6E%6A%69%61%6F%61%70%70%6C%79@%31%36%33.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/jiaozijun666", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/CV_Zijun_Jiao.pdf", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

@@ -133,6 +133,14 @@ div#notebook {
   border: none;
 }
 
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0px;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(1, 1);
@@ -158,16 +166,6 @@ div#notebook {
     -webkit-transform: scale(1, 1);
     opacity: 0.8;
   }
-}
-
-.fa {
-  display: inline-block;
-  font:
-    normal normal normal 10pt/1 "FontAwesome",
-    sans-serif;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .dropdown-menu {
@@ -350,12 +348,6 @@ div.modal-footer > button:hover {
   border-top: none;
 }
 
-.alert-info {
-  background-color: #fdfdfd;
-  border-color: #dedede;
-  color: #303030;
-}
-
 div.panel,
 .panel {
   font-family: sans-serif;
@@ -365,20 +357,6 @@ div.panel,
   margin-bottom: 14px;
   border: 0;
   box-shadow: none;
-}
-
-div.form-control,
-.form-control {
-  font-family: sans-serif;
-  font-size: initial;
-  color: #303030;
-  background-color: #ffffff;
-  border: 1px solid #d0d0d0 !important;
-  margin-left: 2px;
-  box-shadow: none;
-  transition:
-    border-color 0.15s ease-in-out 0s,
-    box-shadow 0.15s ease-in-out 0s;
 }
 
 input,
@@ -403,12 +381,6 @@ textarea {
   background: #e5e5e5 !important;
   background-color: #e5e5e5 !important;
   border: 2px solid #e5e5e5 !important;
-}
-
-.form-control:focus {
-  border-color: #ff7823;
-  outline: 2px solid rgba(240, 147, 43, 0.5);
-  -webkit-box-shadow: none;
 }
 
 ::-webkit-input-placeholder {
@@ -455,13 +427,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 pre,
 code,
 form,
-fieldset,
-legend,
 input,
 button,
 textarea,
@@ -589,12 +558,6 @@ hr {
   z-index: 10;
 }
 
-.alert-warning {
-  background-color: #f4f4f4;
-  border-color: #f4f4f4;
-  color: #303030;
-}
-
 mark,
 .mark {
   background-color: #ffffff;
@@ -634,14 +597,6 @@ input.raw_input {
 }
 
 
-video {
-  display: inline;
-  vertical-align: middle;
-  align-content: center;
-  margin-left: 20%;
-}
-
-
 .well {
   background-color: #e4e4e4;
   border: 1px solid #e4e4e4;
@@ -649,44 +604,6 @@ video {
   border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-
-.ansi-black-fg {
-  color: #e22978;
-}
-
-
-.ansi-blue-fg,
-.ansi-blue-intense-fg {
-  color: #009e07;
-}
-
-
-.ansi-green-fg {
-  color: #333333;
-}
-
-.ansi-green-intense-fg {
-  color: #ff8132;
-}
-
-
-.ansi-cyan-fg,
-.ansi-cyan-intense-fg {
-  color: #653bc5;
-}
-
-
-.ansi-yellow-fg,
-.ansi-yellow-intense-fg {
-  color: #ff8132;
-}
-
-
-.ansi-red-fg,
-.ansi-red-intense-fg {
-  color: #de143d;
 }
 
 
