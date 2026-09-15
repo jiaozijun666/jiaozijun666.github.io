@@ -83,7 +83,8 @@ cv:
 
     Projects:
       - name: Multi-agent equity analysis with large language models
-        date: 2025
+        start_date: 2025-01
+        end_date: 2025-05
         summary: Coursework project, National University of Singapore.
         highlights:
           - "Co-designed the shared state object through which four analyst agents (fundamentals, technical, sentiment, adversarial) exchange information: agents never call one another; tools write into six typed domains and downstream agents read the fields they need, keeping each agent independently testable and replaceable."
@@ -91,7 +92,8 @@ cv:
           - "Specified a five-part adversarial challenge applied to the analyst reports, testing for over-optimistic assumptions, under-weighted macro and governance risk, cross-report contradictions, assumption fragility and horizon-separated forecasts. The project delivered a working system; no backtesting was carried out."
 
       - name: Scaled conjugate gradient methods for deep learning optimisation
-        date: 2025
+        start_date: 2025-03
+        end_date: 2025-05
         summary: Coursework project, National University of Singapore.
         highlights:
           - "The team studied a hybrid optimiser introducing a dynamic scaling factor into the conjugate-gradient update rule, with convergence rates argued at O(1/N) under a constant step size and O(1/√N) under a decaying step size, benchmarked against SGD, Adam and AdaBelief on CIFAR-10, CIFAR-100 and IMDb."
