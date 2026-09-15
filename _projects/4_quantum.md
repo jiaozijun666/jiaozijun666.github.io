@@ -6,7 +6,7 @@ importance: 4
 category: research experience
 ---
 
-**Undergraduate dissertation, University of Southampton · October 2023 – May 2024 · sole author, advised by [Dr. Itamar Yaakov](https://www.southampton.ac.uk/people/629q5s/doctor-itamar-yaakov)**
+**Undergraduate dissertation, University of Southampton · October 2023 – May 2024 · sole author, advised by [Dr. Itamar Yaakov](https://www.southampton.ac.uk/people/629q5s/doctor-itamar-yaakov)** · [Thesis](/assets/pdf/Undergraduate_thesis.pdf)
 
 The many-body wavefunction has a number of amplitudes exponential in system size, so any usable method is really a claim about which compressed representation is adequate. The dissertation reviews and compares three such claims — neural-network quantum states, matrix-product and projected entangled-pair tensor networks, and restricted Boltzmann machines — as variational representations, covering variational optimisation, imaginary-time evolution, and variational Monte Carlo with stochastic reconfiguration.
 
