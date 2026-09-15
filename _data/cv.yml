@@ -59,7 +59,7 @@ cv:
         url: https://thfl.tsinghua.edu.cn/index.htm
         area: The Future Laboratory
         studyType: Research Assistant (non-degree appointment)
-        start_date: 2025-06
+        start_date: 2025-08
 
       - institution: National University of Singapore
         location: Singapore
@@ -67,7 +67,7 @@ cv:
         area: Data Science for Sustainability
         studyType: MSc
         start_date: 2024-08
-        end_date: 2025-05
+        end_date: 2025-06
         courses:
           - "Optimisation Methods for Deep Learning; Deep Learning for Time-Series Analysis"
 
