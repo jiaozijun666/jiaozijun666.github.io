@@ -41,7 +41,7 @@ cv:
         position: LLM-assisted ESG metric extraction and standardisation for healthcare reporting
         start_date: 2024-08
         end_date: 2024-11
-         highlights:
+        highlights:
           - "Backend data-processing pipeline: implemented PDF parsing, text cleaning and segmentation, and ESG metric extraction to transform heterogeneous sustainability reports into structured indicator–value–unit records with confidence information."
           - "NLP/LLM integration: integrated semantic matching and language-model components to standardise free-form ESG metrics against a canonical taxonomy and prepare structured outputs for downstream scoring, database storage and dashboard visualisation."
           
